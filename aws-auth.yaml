@@ -7,12 +7,8 @@ data:
       rolearn: arn:aws:iam::586794480827:role/eksctl-expense-cluster-1-nodegroup-NodeInstanceRole-A1pUZ7HSzXqx
       username: system:node:{{EC2PrivateDNSName}}
   mapUsers: |
-    - groups:
-      - expense-trainee
-      userarn: arn:aws:iam::586794480827:user/meerjan
-      username: meerjan
-    - groups:
-      - expense-admin
+      - groups:
+      - expense-cluster
       userarn: arn:aws:iam::586794480827:user/meerjan
       username: meerjan
 kind: ConfigMap
