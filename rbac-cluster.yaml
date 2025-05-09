@@ -19,5 +19,5 @@ subjects:
   apiGroup: rbac.authorization.k8s.io
 roleRef:
   kind: ClusterRole
-  name: expense
+  name: expense-cluster-1
   apiGroup: rbac.authorization.k8s.io
