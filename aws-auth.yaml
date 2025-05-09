@@ -15,7 +15,10 @@ data:
       - expense-admin
       userarn: arn:aws:iam::586794480827:user/meerjan2
       username: meerjan2
-
+    - groups:
+      - expense-cluster
+      userarn: arn:aws:iam::586794480827:user/meerjan3
+      username: meerjan3
 kind: ConfigMap
 metadata:
   creationTimestamp: "2025-05-09T16:22:01Z"
