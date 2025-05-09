@@ -4,24 +4,16 @@ data:
     - groups:
       - system:bootstrappers
       - system:nodes
-      rolearn: arn:aws:iam::586794480827:role/eksctl-expense-cluster-1-nodegroup-NodeInstanceRole-A1pUZ7HSzXqx
+      rolearn: arn:aws:iam::586794480827:role/eksctl-expense-cluster-1-nodegroup-NodeInstanceRole-1gtj5eZ3p1Rb
       username: system:node:{{EC2PrivateDNSName}}
   mapUsers: |
     - groups:
       - expense-trainee
       userarn: arn:aws:iam::586794480827:user/meerjan1
       username: meerjan1
-    - groups:
-      - expense-admin
-      userarn: arn:aws:iam::586794480827:user/meerjan2
-      username: meerjan2
-    - groups:
-      - expense-cluster
-      userarn: arn:aws:iam::586794480827:user/meerjan2
-      username: meerjan3
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2025-05-08T16:17:46Z"
+  creationTimestamp: "2025-05-09T16:22:01Z"
   name: aws-auth
   namespace: kube-system
-  uid: 54955a4a-3492-4085-97b1-4ecc1545fbad
+  uid: b31772b7-e5cd-4e6d-8101-e31526e675dd
